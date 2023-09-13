@@ -1,0 +1,7 @@
+D:\C#\Resume\Resume.Presentation\obj\Release\net7.0\PubTmp\Out\Resume.Presentation.exe
+D:\C#\Resume\Resume.Presentation\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+D:\C#\Resume\Resume.Presentation\obj\Release\net7.0\PubTmp\Out\appsettings.json
+D:\C#\Resume\Resume.Presentation\obj\Release\net7.0\PubTmp\Out\Resume.Presentation.dll
+D:\C#\Resume\Resume.Presentation\obj\Release\net7.0\PubTmp\Out\Resume.Presentation.deps.json
+D:\C#\Resume\Resume.Presentation\obj\Release\net7.0\PubTmp\Out\Resume.Presentation.runtimeconfig.json
+D:\C#\Resume\Resume.Presentation\obj\Release\net7.0\PubTmp\Out\Resume.Presentation.pdb
