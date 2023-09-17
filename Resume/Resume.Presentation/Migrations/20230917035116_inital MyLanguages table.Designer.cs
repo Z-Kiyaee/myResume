@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Resume.Presentation.Models.ResumeDbContext;
 
@@ -10,9 +11,11 @@ using Resume.Presentation.Models.ResumeDbContext;
 namespace Resume.Presentation.Migrations
 {
     [DbContext(typeof(ResumeDbContext))]
-    partial class ResumeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230917035116_inital MyLanguages table")]
+    partial class initalMyLanguagestable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,7 +99,7 @@ namespace Resume.Presentation.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MyLanguages");
+                    b.ToTable("myLanguages");
                 });
 
             modelBuilder.Entity("Resume.Presentation.Models.Entities.MySkills", b =>

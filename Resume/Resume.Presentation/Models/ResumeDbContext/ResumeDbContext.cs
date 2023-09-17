@@ -14,4 +14,5 @@ public class ResumeDbContext: DbContext
     public DbSet<Education> Educations { get; set; }
     public DbSet<Experience> Experiences { get; set; }
     public DbSet<MySkills> MySkills { get; set; }
+    public DbSet<MyLanguages> MyLanguages { get; set; }
 }
