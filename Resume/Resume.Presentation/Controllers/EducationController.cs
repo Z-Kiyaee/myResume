@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Resume.Presentation.Models.Entities;
 using Resume.Presentation.Models.ResumeDbContext;
 
@@ -13,19 +14,19 @@ public class EducationController : Controller
         _context = context;
     }
 
-    public IActionResult ListOfEducations()
+    public async Task<IActionResult> ListOfEducations()
     {
         //get list of educations
-        List<Education> educationsList = _context.Educations.ToList();
+        List<Education> educationsList = await _context.Educations.ToListAsync();
         
         //get first education
-        Education firstEducation = educationsList.First();
+        //Education firstEducation = educationsList.First();
 
 
         return View();
     }
 
-    public IActionResult AddRecords()
+    public async Task<IActionResult> AddEducation()
     {
         Education education1 = new Education()
         {
@@ -33,10 +34,19 @@ public class EducationController : Controller
             EducationDuration = "2018-2022",
             Description = "Bachelor's degree"
         };
-        _context.Educations.Add(education1);
-        _context.SaveChanges();
+        await _context.Educations.AddAsync(education1);
+        await _context.SaveChangesAsync();
 
-        return View();
+        return RedirectToAction(nameof(ListOfEducations));
 
+    }
+
+    public async Task<IActionResult> RemoveEducation()
+    {
+        Education? education = await _context.Educations.Where(e => e.Id == 2).FirstOrDefaultAsync();
+        _context.Educations.Remove(education);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(ListOfEducations));
     }
 }
