@@ -15,7 +15,28 @@ public class EducationController : Controller
 
     public IActionResult ListOfEducations()
     {
+        //get list of educations
         List<Education> educationsList = _context.Educations.ToList();
+        
+        //get first education
+        Education firstEducation = educationsList.First();
+
+
         return View();
+    }
+
+    public IActionResult AddRecords()
+    {
+        Education education1 = new Education()
+        {
+            EducatationTitle = "High School",
+            EducationDuration = "2018-2022",
+            Description = "Bachelor's degree"
+        };
+        _context.Educations.Add(education1);
+        _context.SaveChanges();
+
+        return View();
+
     }
 }
