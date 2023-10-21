@@ -24,4 +24,8 @@
     <ProjectReference Include="..\Resume.Infrastructure\Resume.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\AdminSide\" />
+  </ItemGroup>
+
 </Project>

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Resume.Presentation.Models;
 using Resume.Presentation.Models.ResumeDbContext;
 using System.Diagnostics;
+using Resume.Application.DTOs.SiteSide.Home_Index;
 
 namespace Resume.Presentation.Controllers
 {
@@ -28,7 +29,19 @@ namespace Resume.Presentation.Controllers
             var myEducations = await _context.Educations.ToListAsync();
             var myExperiences = await _context.Experiences.ToListAsync();
 
-            return View(myEducations);
+            HomeIndexModelDTO model = new HomeIndexModelDTO
+            {
+
+            }
+
+
+			#region ViewBag
+			//ViewBag.Skills = mySkills;
+			//ViewBag.Educations = myEducations;
+			//ViewBag.Experiences = myExperiences;
+			#endregion
+
+			return View();
         }
 
     }
