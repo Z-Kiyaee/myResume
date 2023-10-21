@@ -31,9 +31,10 @@ namespace Resume.Presentation.Controllers
 
             HomeIndexModelDTO model = new HomeIndexModelDTO
             {
-
-            }
-
+                Educations = myEducations,
+                Experiences = myExperiences,
+                Skills = mySkills
+            };
 
 			#region ViewBag
 			//ViewBag.Skills = mySkills;
@@ -41,7 +42,7 @@ namespace Resume.Presentation.Controllers
 			//ViewBag.Experiences = myExperiences;
 			#endregion
 
-			return View();
+			return View(model);
         }
 
     }
