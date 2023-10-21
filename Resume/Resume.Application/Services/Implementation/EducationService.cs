@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Resume.Application.Services.Interfaces;
-using Resume.Presentation.Models.Entities;
+using Resume.Domain.Models.Entities;
 using Resume.Presentation.Models.ResumeDbContext;
 using System;
 using System.Collections.Generic;

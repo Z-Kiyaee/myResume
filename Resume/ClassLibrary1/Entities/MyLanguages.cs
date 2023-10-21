@@ -1,4 +1,4 @@
-﻿namespace Resume.Presentation.Models.Entities
+﻿namespace Resume.Domain.Models.Entities
 {
     public class MyLanguages
     {

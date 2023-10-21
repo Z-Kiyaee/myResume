@@ -1,4 +1,4 @@
-namespace Resume.Presentation.Models
+namespace Resume.Domain.Models
 {
     public class ErrorViewModel
     {

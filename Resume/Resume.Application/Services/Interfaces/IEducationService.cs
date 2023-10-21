@@ -1,4 +1,4 @@
-﻿using Resume.Presentation.Models.Entities;
+﻿using Resume.Domain.Models.Entities;
 
 namespace Resume.Application.Services.Interfaces
 {
