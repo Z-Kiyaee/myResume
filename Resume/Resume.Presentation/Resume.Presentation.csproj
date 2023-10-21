@@ -29,4 +29,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Resume.Infrastructure\Resume.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

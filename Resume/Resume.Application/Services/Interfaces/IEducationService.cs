@@ -1,10 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Resume.Presentation.Models.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Resume.Presentation.Models.Entities;
 
 namespace Resume.Application.Services.Interfaces
 {

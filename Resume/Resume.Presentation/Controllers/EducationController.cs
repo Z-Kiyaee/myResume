@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Resume.Presentation.Models.Entities;
+//using Resume.Presentation.Models.Entities;
 using Resume.Presentation.Models.ResumeDbContext;
 
 namespace Resume.Presentation.Controllers;
