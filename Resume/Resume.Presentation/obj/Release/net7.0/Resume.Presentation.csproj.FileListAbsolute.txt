@@ -111,3 +111,11 @@ D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.In
 D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Domain.pdb
 D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Application.pdb
 D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Infrastructure.pdb
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\EntityFramework.SqlServer.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\EntityFramework.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\System.Data.SqlClient.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\runtimes\win-arm64\native\sni.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\runtimes\win-x64\native\sni.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\runtimes\win-x86\native\sni.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

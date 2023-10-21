@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Resume.Presentation.Models;
+using Resume.Domain.Models.Entities;
 using Resume.Presentation.Models.ResumeDbContext;
 using System.Diagnostics;
 using Resume.Application.DTOs.SiteSide.Home_Index;

@@ -1,5 +1,4 @@
 D:\Repositories\myResume\Resume\ClassLibrary1\bin\Release\net7.0\Resume.Domain.deps.json
-D:\Repositories\myResume\Resume\ClassLibrary1\bin\Release\net7.0\Resume.Domain.runtimeconfig.json
 D:\Repositories\myResume\Resume\ClassLibrary1\bin\Release\net7.0\Resume.Domain.dll
 D:\Repositories\myResume\Resume\ClassLibrary1\bin\Release\net7.0\Resume.Domain.pdb
 D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\Resume.Domain.csproj.AssemblyReference.cache
@@ -10,5 +9,6 @@ D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\Resume.Domain.c
 D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\Resume.Domain.dll
 D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\refint\Resume.Domain.dll
 D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\Resume.Domain.pdb
-D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\Resume.Domain.genruntimeconfig.cache
 D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\ref\Resume.Domain.dll
+D:\Repositories\myResume\Resume\ClassLibrary1\bin\Release\net7.0\Resume.Domain.runtimeconfig.json
+D:\Repositories\myResume\Resume\ClassLibrary1\obj\Release\net7.0\Resume.Domain.genruntimeconfig.cache
