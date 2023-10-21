@@ -7,7 +7,7 @@ namespace Resume.Presentation.Controllers;
 
 public class EducationController : Controller
 {
-
+    //private readonly IEducationService
 
     public async Task<IActionResult> ListOfEducations()
     {
