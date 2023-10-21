@@ -105,3 +105,9 @@ D:\Repositories\myResume\Resume\Resume.Presentation\obj\Release\net7.0\refint\Re
 D:\Repositories\myResume\Resume\Resume.Presentation\obj\Release\net7.0\Resume.Presentation.pdb
 D:\Repositories\myResume\Resume\Resume.Presentation\obj\Release\net7.0\Resume.Presentation.genruntimeconfig.cache
 D:\Repositories\myResume\Resume\Resume.Presentation\obj\Release\net7.0\ref\Resume.Presentation.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Application.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Domain.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Infrastructure.dll
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Domain.pdb
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Application.pdb
+D:\Repositories\myResume\Resume\Resume.Presentation\bin\Release\net7.0\Resume.Infrastructure.pdb

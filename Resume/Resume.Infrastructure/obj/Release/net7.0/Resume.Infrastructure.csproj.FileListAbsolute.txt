@@ -1,0 +1,17 @@
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.csproj.AssemblyReference.cache
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.AssemblyInfoInputs.cache
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.AssemblyInfo.cs
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Repositories\myResume\Resume\Resume.Infrastructure\bin\Release\net7.0\Resume.Infrastructure.deps.json
+D:\Repositories\myResume\Resume\Resume.Infrastructure\bin\Release\net7.0\Resume.Infrastructure.runtimeconfig.json
+D:\Repositories\myResume\Resume\Resume.Infrastructure\bin\Release\net7.0\Resume.Infrastructure.dll
+D:\Repositories\myResume\Resume\Resume.Infrastructure\bin\Release\net7.0\Resume.Infrastructure.pdb
+D:\Repositories\myResume\Resume\Resume.Infrastructure\bin\Release\net7.0\Resume.Domain.dll
+D:\Repositories\myResume\Resume\Resume.Infrastructure\bin\Release\net7.0\Resume.Domain.pdb
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.csproj.CopyComplete
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.dll
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\refint\Resume.Infrastructure.dll
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.pdb
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\Resume.Infrastructure.genruntimeconfig.cache
+D:\Repositories\myResume\Resume\Resume.Infrastructure\obj\Release\net7.0\ref\Resume.Infrastructure.dll

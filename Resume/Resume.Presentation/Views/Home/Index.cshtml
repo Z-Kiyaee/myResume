@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Resume.Domain.Models.Entities.Education>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -12,12 +13,16 @@
 	<div class="section">
 		<h2 class="title title--h2"><img class="title-icon" src="/SiteSample/assets/icons/icon-education.svg" alt="" /> Education</h2>
 		<div class="timeline">
+
+			@foreach (var education	in Model)
+			{
 			<!-- Item -->
 			<article class="timeline__item">
-				<h5 class="title title--h3 timeline__title">Alzahra University</h5>
-				<span class="timeline__period">2022 — 2027</span>
-				<p class="timeline__description">Bachelor of Computer Science.</p>
-			</article>
+				<h5 class="title title--h3 timeline__title">@education.EducatationTitle</h5>
+				<span class="timeline__period">@education.EducationDuration</span>
+				<p class="timeline__description">@education.Description</p>
+			</article>			
+			}
 @*
 			<!-- Item -->
 			<article class="timeline__item">

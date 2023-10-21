@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Resume.Application.Services.Interfaces;
-using Resume.Presentation.Models.Entities;
+using Resume.Domain.Models.Entities;
 using Resume.Presentation.Models.ResumeDbContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Resume.Application.Services.Implementation
 {
