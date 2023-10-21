@@ -1,42 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Resume.Presentation.Models.Entities;
+using Microsoft.EntityFrameworkCore;
+//using Resume.Presentation.Models.Entities;
 using Resume.Presentation.Models.ResumeDbContext;
 
 namespace Resume.Presentation.Controllers;
 
 public class EducationController : Controller
 {
-    private ResumeDbContext _context;
 
-    public EducationController(ResumeDbContext context)
+
+    public async Task<IActionResult> ListOfEducations()
     {
-        _context = context;
-    }
-
-    public IActionResult ListOfEducations()
-    {
-        //get list of educations
-        List<Education> educationsList = _context.Educations.ToList();
-        
-        //get first education
-        Education firstEducation = educationsList.First();
-
-
         return View();
     }
 
-    public IActionResult AddRecords()
+    public async Task<IActionResult> AddEducation()
     {
-        Education education1 = new Education()
-        {
-            EducatationTitle = "High School",
-            EducationDuration = "2018-2022",
-            Description = "Bachelor's degree"
-        };
-        _context.Educations.Add(education1);
-        _context.SaveChanges();
+        return RedirectToAction(nameof(ListOfEducations));
+    }
 
-        return View();
-
+    public async Task<IActionResult> RemoveEducation(int educationId)
+    {
+        return RedirectToAction(nameof(ListOfEducations));
     }
 }

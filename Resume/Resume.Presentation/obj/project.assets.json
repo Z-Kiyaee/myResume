@@ -1053,6 +1053,39 @@
             "rid": "win"
           }
         }
+      },
+      "Resume.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Resume.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resume.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Application.dll": {}
+        }
+      },
+      "Resume.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Resume.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Domain.dll": {}
+        }
+      },
+      "Resume.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Resume.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2875,6 +2908,21 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Resume.Application/1.0.0": {
+      "type": "project",
+      "path": "../Resume.Application/Resume.Application.csproj",
+      "msbuildProject": "../Resume.Application/Resume.Application.csproj"
+    },
+    "Resume.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibrary1/Resume.Domain.csproj",
+      "msbuildProject": "../ClassLibrary1/Resume.Domain.csproj"
+    },
+    "Resume.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Resume.Infrastructure/Resume.Infrastructure.csproj",
+      "msbuildProject": "../Resume.Infrastructure/Resume.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2882,7 +2930,10 @@
       "Microsoft.EntityFrameworkCore >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.11",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.11"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.11",
+      "Resume.Application >= 1.0.0",
+      "Resume.Domain >= 1.0.0",
+      "Resume.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2918,7 +2969,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repositories\\myResume\\Resume\\ClassLibrary1\\Resume.Domain.csproj": {
+              "projectPath": "D:\\Repositories\\myResume\\Resume\\ClassLibrary1\\Resume.Domain.csproj"
+            },
+            "D:\\Repositories\\myResume\\Resume\\Resume.Application\\Resume.Application.csproj": {
+              "projectPath": "D:\\Repositories\\myResume\\Resume\\Resume.Application\\Resume.Application.csproj"
+            },
+            "D:\\Repositories\\myResume\\Resume\\Resume.Infrastructure\\Resume.Infrastructure.csproj": {
+              "projectPath": "D:\\Repositories\\myResume\\Resume\\Resume.Infrastructure\\Resume.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
