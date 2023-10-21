@@ -1193,8 +1193,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "7.0.12",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12"
         },
         "compile": {
           "bin/placeholder/Resume.Domain.dll": {}
