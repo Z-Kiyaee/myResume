@@ -11,7 +11,7 @@ using System.Xml.Linq;
 
 namespace Resume.Application.Services.Implementation
 {
-    internal class EducationService : IEducationService
+    public class EducationService : IEducationService
     {
         private ResumeDbContext _context;
 

@@ -5,6 +5,7 @@ using Resume.Domain.Models.Entities;
 using Resume.Presentation.Models.ResumeDbContext;
 using System.Diagnostics;
 using Resume.Application.DTOs.SiteSide.Home_Index;
+using Resume.Domain.RepositoryInterface;
 
 namespace Resume.Presentation.Controllers
 {
@@ -17,24 +18,30 @@ namespace Resume.Presentation.Controllers
         //    _logger = logger;
         //}
 
-        private readonly ResumeDbContext _context;
+        private readonly IEducationRepository _educationRepository;
+        private readonly IExperienceRepository _experienceRepository;
+        private readonly ISkillRepository _skillRepository;
 
-        public HomeController(ResumeDbContext context)
+        public HomeController(IEducationRepository educationRepository, 
+                              IExperienceRepository experienceRepository,
+                              ISkillRepository skillRepository)
         {
-            _context = context;
+            _educationRepository = educationRepository;
+            _experienceRepository = experienceRepository;
+            _skillRepository = skillRepository;
         }
 
         public async Task<IActionResult> Index()
         {
-            var mySkills = await _context.MySkills.ToListAsync();
-            var myEducations = await _context.Educations.ToListAsync();
-            var myExperiences = await _context.Experiences.ToListAsync();
+            var mySkills = _skillRepository.GetListOfMySkills();
+            var myEducations = _educationRepository.GetListOfEducations();
+            var myExperiences = _experienceRepository.GetListOfExperience();
 
             HomeIndexModelDTO model = new HomeIndexModelDTO
             {
-                Educations = myEducations,
-                Experiences = myExperiences,
-                Skills = mySkills
+                Educations = await myEducations,
+                Experiences = await myExperiences,
+                Skills = await mySkills
             };
 
 			#region ViewBag

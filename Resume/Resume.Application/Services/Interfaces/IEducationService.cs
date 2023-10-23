@@ -2,7 +2,7 @@
 
 namespace Resume.Application.Services.Interfaces
 {
-    internal interface IEducationService
+    public interface IEducationService
     {
         Task<List<Education>> ListOfEducations();
         Task AddEducation(Education education);
