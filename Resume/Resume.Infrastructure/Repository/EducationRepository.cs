@@ -1,12 +1,7 @@
-﻿using Resume.Domain.Models.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Resume.Domain.Models.Entities;
 using Resume.Domain.RepositoryInterface;
 using Resume.Presentation.Models.ResumeDbContext;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Resume.Infrastructure.Repository
 {

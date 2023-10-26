@@ -7,16 +7,11 @@ using System.Diagnostics;
 using Resume.Application.DTOs.SiteSide.Home_Index;
 using Resume.Domain.RepositoryInterface;
 
+
 namespace Resume.Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly ILogger<HomeController> _logger;
-
-        //public HomeController(ILogger<HomeController> logger)
-        //{
-        //    _logger = logger;
-        //}
 
         private readonly IEducationRepository _educationRepository;
         private readonly IExperienceRepository _experienceRepository;
@@ -33,15 +28,15 @@ namespace Resume.Presentation.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var mySkills = _skillRepository.GetListOfMySkills();
-            var myEducations = _educationRepository.GetListOfEducations();
-            var myExperiences = _experienceRepository.GetListOfExperience();
+            var mySkills = await _skillRepository.GetListOfMySkills();
+            var myEducations = await _educationRepository.GetListOfEducations();
+            var myExperiences = await _experienceRepository.GetListOfExperience();
 
-            HomeIndexModelDTO model = new HomeIndexModelDTO
+			HomeIndexModelDTO model = new HomeIndexModelDTO
             {
-                Educations = await myEducations,
-                Experiences = await myExperiences,
-                Skills = await mySkills
+                Educations = myEducations,
+                Experiences = myExperiences,
+                Skills = mySkills
             };
 
 			#region ViewBag
