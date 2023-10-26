@@ -1,4 +1,6 @@
-﻿<div class="content" data-simplebar="init">
+﻿@model Resume.Domain.Entities.ContactUs
+
+<div class="content" data-simplebar="init">
 	<div class="simplebar-wrapper" style="margin: 0px -30px;">
 		<div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask">
 			<div class="simplebar-offset" style="right: 0px; bottom: 0px;">
@@ -9,20 +11,20 @@
 						</div>
 
 						<!-- Contact -->
-						<form id="contact-form" class="contact-form" data-toggle="validator" novalidate="true">
+						<form id="" class="contact-form" data-toggle="validator" novalidate="true" method="post" asp-action="ContactUs" asp-controller="ContactUs">
 							<div class="row">
 								<div class="form-group col-12 col-md-6">
 									<i class="font-icon icon-user"></i>
-									<input type="text" class="input input__icon form-control" id="nameContact" name="nameContact" placeholder="Full name" required="required" autocomplete="on" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+									<input type="text" class="input input__icon form-control" id="nameContact" asp-for="Name" placeholder="Full name" required="required" autocomplete="on" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="form-group col-12 col-md-6">
-									<i class="font-icon icon-at"></i>
-									<input type="email" class="input input__icon form-control" id="emailContact" name="emailContact" placeholder="Email address" required="required" autocomplete="on" oninvalid="setCustomValidity('Email is incorrect')" onkeyup="setCustomValidity('')">
+									<i class="font-icon icon-user"></i>
+									<input type="text" class="input input__icon form-control" id="nameContact" asp-for="PhoneNumber" placeholder="Phone number" required="required" autocomplete="on" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="form-group col-12 col-md-12">
-									<textarea class="textarea form-control" id="messageContact" name="messageContact" placeholder="Your Message" rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')" style="overflow: hidden; overflow-wrap: break-word; height: 117.6px;"></textarea>
+									<textarea class="textarea form-control" id="messageContact" asp-for="Message" placeholder="Your Message" rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')" style="overflow: hidden; overflow-wrap: break-word; height: 117.6px;"></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
