@@ -21,6 +21,10 @@ builder.Services.AddScoped<IContactUsRepository, ContactUsRepository>();
 #region Services
 
 builder.Services.AddScoped<IContactUsService, ContactUsService>();
+builder.Services.AddScoped<IEducationService, EducationService>();
+builder.Services.AddScoped<IExperienceService, ExperienceService>();
+builder.Services.AddScoped<IMySkillService, MySkillService>();
+builder.Services.AddScoped<IHomeService, HomeService>();
 
 #endregion
 builder.Services.AddDbContext<ResumeDbContext>();

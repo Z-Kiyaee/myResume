@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Resume.Application.Services.Interfaces;
 using Resume.Domain.Models.Entities;
+using Resume.Domain.RepositoryInterface;
 using Resume.Presentation.Models.ResumeDbContext;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,19 @@ namespace Resume.Application.Services.Implementation
 {
     public class EducationService : IEducationService
     {
+        private readonly IEducationRepository _educationRepository;
+
+        public EducationService(IEducationRepository educationRepository)
+        {
+            _educationRepository = educationRepository;
+        }
+
+		public async Task<List<Education>> GetListOfEducations()
+		{
+			return await _educationRepository.GetListOfEducations();
+		}
+
+		/*
         private ResumeDbContext _context;
 
         public EducationService(ResumeDbContext context)
@@ -56,5 +70,6 @@ namespace Resume.Application.Services.Implementation
             }
             return education;
         }
-    }
+        */
+	}
 }

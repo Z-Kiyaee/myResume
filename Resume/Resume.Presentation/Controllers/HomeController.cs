@@ -6,44 +6,22 @@ using Resume.Presentation.Models.ResumeDbContext;
 using System.Diagnostics;
 using Resume.Application.DTOs.SiteSide.Home_Index;
 using Resume.Domain.RepositoryInterface;
-
+using Resume.Infrastructure.Repository;
+using Resume.Application.Services.Interfaces;
 
 namespace Resume.Presentation.Controllers
 {
     public class HomeController : Controller
     {
-
-        private readonly IEducationRepository _educationRepository;
-        private readonly IExperienceRepository _experienceRepository;
-        private readonly ISkillRepository _skillRepository;
-
-        public HomeController(IEducationRepository educationRepository, 
-                              IExperienceRepository experienceRepository,
-                              ISkillRepository skillRepository)
+		private readonly IHomeService _homeService;
+        public HomeController(IHomeService homeService)
         {
-            _educationRepository = educationRepository;
-            _experienceRepository = experienceRepository;
-            _skillRepository = skillRepository;
+            _homeService = homeService;
         }
 
         public async Task<IActionResult> Index()
-        {
-            var mySkills = await _skillRepository.GetListOfMySkills();
-            var myEducations = await _educationRepository.GetListOfEducations();
-            var myExperiences = await _experienceRepository.GetListOfExperience();
-
-			HomeIndexModelDTO model = new HomeIndexModelDTO
-            {
-                Educations = myEducations,
-                Experiences = myExperiences,
-                Skills = mySkills
-            };
-
-			#region ViewBag
-			//ViewBag.Skills = mySkills;
-			//ViewBag.Educations = myEducations;
-			//ViewBag.Experiences = myExperiences;
-			#endregion
+		{
+            var model = await _homeService.FillHomeModel();
 
 			return View(model);
         }
