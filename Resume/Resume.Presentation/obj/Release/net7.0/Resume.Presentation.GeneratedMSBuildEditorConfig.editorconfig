@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Repositories\myResume\Resume\Resume.Presentation
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Repositories/myResume/Resume/Resume.Presentation/Areas/AdminPanel/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repositories/myResume/Resume/Resume.Presentation/Areas/AdminPanel/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTaGFyZWRcX0FkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repositories/myResume/Resume/Resume.Presentation/Areas/AdminPanel/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repositories/myResume/Resume/Resume.Presentation/Areas/AdminPanel/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repositories/myResume/Resume/Resume.Presentation/Areas/AdminPanel/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Repositories/myResume/Resume/Resume.Presentation/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,10 +50,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Repositories/myResume/Resume/Resume.Presentation/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Repositories/myResume/Resume/Resume.Presentation/Views/Shared/_AdminLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Repositories/myResume/Resume/Resume.Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]

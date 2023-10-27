@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Resume.Application.Services.Implementation;
 using Resume.Application.Services.Interfaces;
 using Resume.Domain.RepositoryInterface;
@@ -46,6 +47,10 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "area",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "default",

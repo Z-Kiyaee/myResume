@@ -7,6 +7,9 @@
     <View_SelectedScaffolderID>RazorViewEmptyScaffolder</View_SelectedScaffolderID>
     <View_SelectedScaffolderCategoryPath>root/Common/MVC/View</View_SelectedScaffolderCategoryPath>
     <NameOfLastUsedPublishProfile>D:\Repositories\myResume\Resume\Resume.Presentation\Properties\PublishProfiles\FolderProfile1.pubxml</NameOfLastUsedPublishProfile>
+    <Area_SelectedScaffolderID>AreaScaffolder</Area_SelectedScaffolderID>
+    <Area_SelectedScaffolderCategoryPath>root/Common</Area_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_DependencyDialogWidth>650.4</WebStackScaffolding_DependencyDialogWidth>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
