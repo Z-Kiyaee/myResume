@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Resume.Application.DTOs.SiteSide.ContactUs;
+using Resume.Application.Services.Interfaces;
 using Resume.Domain.Entities;
 using Resume.Domain.RepositoryInterface;
 
@@ -7,14 +8,14 @@ namespace Resume.Presentation.Controllers
 {
 	public class ContactUsController : Controller
 	{
-		private readonly IContactUsRepository _contactUsRepository;
+		private readonly IContactUsService _contactUsService;
+        public ContactUsController(IContactUsService contactUsService)
+        {
+			_contactUsService = contactUsService;
 
-		public ContactUsController(IContactUsRepository contactUsRepository)
-		{
-			_contactUsRepository = contactUsRepository;
 		}
 
-		public async Task<IActionResult> ContactUs()
+        public async Task<IActionResult> ContactUs()
 		{
 			return View();
 		}
@@ -22,20 +23,7 @@ namespace Resume.Presentation.Controllers
 		[HttpPost]
 		public async Task<IActionResult> ContactUs(ContactUsDTO contactUsDTO)
 		{
-			//object mapping
-			ContactUs contactUs = new ContactUs()
-			{
-				Name = contactUsDTO.Name,
-				PhoneNumber = contactUsDTO.PhoneNumber,
-				Message = contactUsDTO.Message,
-				CreateDate = DateTime.Now,
-				IsSeenByAdmin = false
-			};
-
-
-			//add to DB
-			await _contactUsRepository.AddContactUsToDB(contactUs);
-
+			await _contactUsService.AddContactUs(contactUsDTO);
 			return View();
 		}
 	}
