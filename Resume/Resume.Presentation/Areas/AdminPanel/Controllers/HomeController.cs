@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-namespace Resume.Presentation.Areas.AdminPanel.Views.Controllers
+
+namespace Resume.Presentation.Areas.AdminPanel.Controllers
 {
 
     [Area("AdminPanel")]

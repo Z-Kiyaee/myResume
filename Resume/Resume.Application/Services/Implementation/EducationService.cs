@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Resume.Application.DTOs.AdminSide.Education;
 using Resume.Application.Services.Interfaces;
 using Resume.Domain.Models.Entities;
 using Resume.Domain.RepositoryInterface;
@@ -21,10 +22,31 @@ namespace Resume.Application.Services.Implementation
             _educationRepository = educationRepository;
         }
 
-		public async Task<List<Education>> GetListOfEducations()
+        public async Task<List<Education>> GetListOfEducations()
 		{
 			return await _educationRepository.GetListOfEducations();
 		}
+
+        public async Task<List<EducationAdminSideDTO>> GetListOfEducationForAdminPanel()
+        {
+            var educations = await _educationRepository.GetListOfEducations();
+
+            //obj mapping
+            var returnModel = new List<EducationAdminSideDTO>();
+
+            foreach (var education in educations)
+            {
+                EducationAdminSideDTO childModel = new EducationAdminSideDTO()
+                {
+                    Id = education.Id,
+                    EducatationTitle = education.EducatationTitle,
+                    EducationDuration = education.EducationDuration,
+                    Description = education.Description
+                };
+                returnModel.Add(childModel);
+            }
+            return returnModel;
+        }
 
 		/*
         private ResumeDbContext _context;
