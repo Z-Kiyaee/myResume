@@ -39,7 +39,7 @@ namespace Resume.Application.Services.Implementation
                 EducationAdminSideDTO childModel = new EducationAdminSideDTO()
                 {
                     Id = education.Id,
-                    EducatationTitle = education.EducatationTitle,
+                    EducationTitle = education.EducatationTitle,
                     EducationDuration = education.EducationDuration,
                     Description = education.Description
                 };
@@ -47,6 +47,8 @@ namespace Resume.Application.Services.Implementation
             }
             return returnModel;
         }
+
+
 
 		/*
         private ResumeDbContext _context;

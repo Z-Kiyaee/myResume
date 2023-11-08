@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Repositories\myResume\Resume\Resume.Presentation
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Repositories/myResume/Resume/Resume.Presentation/Areas/AdminPanel/Views/Education/GetListOfEducation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xFZHVjYXRpb25cR2V0TGlzdE9mRWR1Y2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Repositories/myResume/Resume/Resume.Presentation/Areas/AdminPanel/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

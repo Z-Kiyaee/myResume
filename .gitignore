@@ -3,13 +3,11 @@
 ################################################################################
 
 *.vsidx
-/Resume/Resume.Application/obj/project.nuget.cache
-/Resume/Resume.Application/obj/Release/net7.0/Resume.Application.csproj.AssemblyReference.cache
-/Resume/Resume.Application/obj/Resume.Application.csproj.nuget.dgspec.json
-/Resume/Resume.Application/obj/Release/net7.0/Resume.Application.assets.cache
-/Resume/Resume.Application/obj/project.assets.json
-/Resume/Resume.Application/obj/Resume.Application.csproj.nuget.g.props
-/Resume/Resume.Application/obj/Resume.Application.csproj.nuget.g.targets
-/Resume/Resume.Presentation/obj/project.assets.json
-/Resume/Resume.Presentation/obj/project.nuget.cache
-/Resume/Resume.Presentation/obj/Resume.Presentation.csproj.nuget.dgspec.json
+/.vs
+/Resume/.vs
+/Resume/Resume.Presentation/bin
+/Resume/Resume.Presentation/obj
+/Resume/Resume.Application/obj
+/Resume/Resume.Application/bin
+/Resume/Resume.Infrastructure/bin
+/Resume/Resume.Infrastructure/obj

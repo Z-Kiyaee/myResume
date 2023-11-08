@@ -1,0 +1,80 @@
+﻿@model List<Resume.Application.DTOs.AdminSide.Education.EducationAdminSideDTO>
+
+
+<div class="content-wrapper" style="min-height: 265.6px;">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">لیست تحصیلات</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-left">
+                        <li class="breadcrumb-item"><a href="/Admin_Panel/">داشبورد ادمین</a></li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">جدول تحصیلات</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 10px">#</th>
+                                        <th>نام مدرک تحصیلی</th>
+                                        <th>بازه ی زمانی </th>
+                                        <th>توضیحات</th>
+                                        <th>امکانت</th>
+                                    </tr>
+
+                                    @foreach (var education in Model)
+                                    {
+                                        <tr>
+                                            <td>@education.Id</td>
+                                            <td>@education.EducationTitle</td>
+                                            <td>
+                                                @education.EducationDuration
+                                            </td>
+                                            <td>
+                                                @education.Description
+                                            </td>
+                                            <td>
+                                                <a class="badge badge-primary" style="cursor:pointer;"
+                                                   asp-action="EditAnEducation"
+                                                   asp-area="AdminPanel"
+                                                   asp-controller="Education"
+                                                   asp-route-educationId="@education.Id">
+                                                    ویرایش
+                                               </a>
+
+                                                <a class="badge badge-danger" style="cursor:pointer;"
+                                                   asp-action="DeleteAnEducation"
+                                                   asp-area="AdminPanel"
+                                                   asp-controller="Education"
+                                                   asp-route-educationId="@education.Id">حذف</a>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+</div>
