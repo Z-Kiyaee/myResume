@@ -11,3 +11,6 @@
 /Resume/Resume.Application/bin
 /Resume/Resume.Infrastructure/bin
 /Resume/Resume.Infrastructure/obj
+/Resume/Resume.Domain/obj
+/Resume/Resume.Domain/bin
+
